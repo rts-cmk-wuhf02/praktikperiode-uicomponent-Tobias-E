@@ -1,11 +1,22 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Component1 from '../components/component1';
+import Component2 from '../components/component2';
+import { css } from '@emotion/core';
 
 const RootIndex = () => {
 	return (
 		<Layout>
-			<Component1 />
+			<div
+				css={css`
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+				`}
+			>
+				<Component1 />
+				<Component2 />
+			</div>
 		</Layout>
 	);
 };

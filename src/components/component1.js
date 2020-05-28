@@ -26,64 +26,56 @@ const Component1 = () => {
 	return (
 		<div
 			css={css`
-				background-color: #eaeaea;
+				width: 23.25rem;
+				border-radius: 25px;
 				position: relative;
-				z-index: -5;
+				overflow: hidden;
+				background-color: #fff;
 			`}
 		>
-			<div
+			<Img
+				fluid={component[0].image.fluid}
+				alt='surfing'
 				css={css`
-					width: 23.25rem;
-					border-radius: 25px;
-					position: relative;
-					overflow: hidden;
+					width: 25rem;
+					height: 14.75rem;
+					position: absolute;
+					top: -10px;
+					z-index: 2;
+				`}
+			/>
+			<article
+				css={css`
+					padding: 1.6875rem 2.75rem 1.625rem 2.3125rem;
 					background-color: #fff;
 				`}
 			>
-				<Img
-					fluid={component[0].image.fluid}
-					alt='surfing'
+				<h5
 					css={css`
-						width: 25rem;
-						height: 14.75rem;
-						position: absolute;
-						top: -10px;
-						z-index: 2;
-					`}
-				/>
-				<article
-					css={css`
-						padding: 1.6875rem 2.75rem 1.625rem 2.3125rem;
-						background-color: #fff;
+						color: #33439b;
+						text-transform: uppercase;
+						letter-spacing: 0.1rem;
+						margin: 0;
 					`}
 				>
-					<h5
-						css={css`
-							color: #33439b;
-							text-transform: uppercase;
-							letter-spacing: 0.1rem;
-							margin: 0;
-						`}
-					>
-						{component[0].category}
-					</h5>
-					<h1
-						css={css`
-							margin: 0;
-							font-weight: bold;
-						`}
-					>
-						{component[0].heading}
-					</h1>
-					<p
-						css={css`
-							margin: 0;
-						`}
-					>
-						{component[0].bodyText.bodyText}
-					</p>
-				</article>
-			</div>
+					{component[0].category}
+				</h5>
+				<h1
+					css={css`
+						margin: 0;
+						font-weight: bold;
+					`}
+				>
+					{component[0].heading}
+				</h1>
+				<p
+					css={css`
+						margin: 0;
+					`}
+				>
+					{component[0].bodyText.bodyText}
+				</p>
+			</article>
 		</div>
 	);
 };
