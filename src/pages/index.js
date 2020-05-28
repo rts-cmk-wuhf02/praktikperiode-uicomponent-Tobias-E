@@ -1,9 +1,37 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import Layout from '../components/layout';
+import Component1 from '../components/component1';
 
 const RootIndex = () => {
-	return;
+	return (
+		<Layout>
+			<Component1 />
+		</Layout>
+	);
 };
 
 export default RootIndex;
+
+/* export const componentQuery = graphql`
+	query componentQuery {
+		site {
+			siteMetadata {
+				title
+			}
+		}
+		allContentfulComponent1 {
+			nodes {
+				heading
+				bodyText {
+					bodyText
+				}
+				category
+				image {
+					fluid(maxWidth: 400) {
+						...GatsbyContentfulFluid
+					}
+				}
+			}
+		}
+	}
+`; */
