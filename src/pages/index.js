@@ -4,6 +4,7 @@ import Component1 from '../components/Component1';
 import Component2 from '../components/Component2';
 import Component3 from '../components/Component3';
 import Component4 from '../components/Component4';
+import Component5 from '../components/Component5';
 import { css } from '@emotion/core';
 
 const RootIndex = () => {
@@ -42,6 +43,13 @@ const RootIndex = () => {
 				<Component4 number={'2'} />
 				<Component4 number={'1'} />
 				<Component4 number={'0'} />
+			</div>
+			<div
+				css={css`
+					display: grid;
+				`}
+			>
+				<Component5 />
 			</div>
 		</Layout>
 	);

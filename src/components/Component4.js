@@ -22,7 +22,6 @@ const Component4 = ({ number }) => {
 	`);
 
 	const component = data.allContentfulComponent4.nodes;
-	console.log(component);
 	return (
 		<article
 			css={css`
