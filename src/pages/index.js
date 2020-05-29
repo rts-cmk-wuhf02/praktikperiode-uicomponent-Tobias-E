@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import Component1 from '../components/Component1';
 import Component2 from '../components/Component2';
 import Component3 from '../components/Component3';
+import Component4 from '../components/Component4';
 import { css } from '@emotion/core';
 
 const RootIndex = () => {
@@ -31,32 +32,19 @@ const RootIndex = () => {
 				<Component3 number={'1'} />
 				<Component3 number={'0'} />
 			</div>
+			<div
+				css={css`
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+				`}
+			>
+				<Component4 number={'2'} />
+				<Component4 number={'1'} />
+				<Component4 number={'0'} />
+			</div>
 		</Layout>
 	);
 };
 
 export default RootIndex;
-
-/* export const componentQuery = graphql`
-	query componentQuery {
-		site {
-			siteMetadata {
-				title
-			}
-		}
-		allContentfulComponent1 {
-			nodes {
-				heading
-				bodyText {
-					bodyText
-				}
-				category
-				image {
-					fluid(maxWidth: 400) {
-						...GatsbyContentfulFluid
-					}
-				}
-			}
-		}
-	}
-`; */
