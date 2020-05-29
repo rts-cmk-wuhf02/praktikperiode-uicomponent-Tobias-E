@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
-import Component1 from '../components/component1';
-import Component2 from '../components/component2';
-import Component3 from '../components/component3';
+import Component1 from '../components/Component1';
+import Component2 from '../components/Component2';
+import Component3 from '../components/Component3';
 import { css } from '@emotion/core';
 
 const RootIndex = () => {

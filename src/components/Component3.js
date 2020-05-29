@@ -28,11 +28,11 @@ const Component3 = ({ number }) => {
 	return (
 		<article
 			css={css`
-				max-width: 250px;
-				max-height: 272px;
-				padding: 30px;
+				max-width: 15.625rem;
+				max-height: 17rem;
+				padding: 1.875rem;
 				background-color: ${component[number].color};
-				border-radius: 15px;
+				border-radius: 0.9375rem;
 				overflow: hidden;
 				display: flex;
 				flex-direction: column;
@@ -41,14 +41,14 @@ const Component3 = ({ number }) => {
 			<Img
 				fluid={component[number].image.fluid}
 				css={css`
-					margin-left: 180px;
-					max-width: 75px;
-					max-height: 100px;
+					margin-left: 11.25rem;
+					max-width: 4.6875rem;
+					max-height: 6.25rem;
 				`}
 			/>
 			<h4
 				css={css`
-					margin-bottom: 10px;
+					margin-bottom: 0.625rem;
 					color: #fff;
 				`}
 			>
