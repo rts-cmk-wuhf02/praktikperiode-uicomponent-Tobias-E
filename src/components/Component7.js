@@ -24,7 +24,6 @@ const Component7 = ({ number }) => {
 	`);
 
 	const component = data.allContentfulComponent7.nodes;
-	console.log(component);
 	return (
 		<BackgroundImage
 			fluid={component[number].image.fluid}
