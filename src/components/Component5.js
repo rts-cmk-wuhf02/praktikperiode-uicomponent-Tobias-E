@@ -29,10 +29,9 @@ const Component5 = () => {
 		<BackgroundImage
 			fluid={component[0].images[1].fluid}
 			css={css`
-				width: 48.1875rem;
+				width: 43.8125rem;
 				height: 29.6875rem;
 				padding: 2.1875rem;
-				margin: 0.9375rem;
 				border-radius: 15px;
 				position: relative;
 				overflow: hidden;
@@ -93,7 +92,7 @@ const Component5 = () => {
 							margin-bottom: 1.125rem;
 							color: #fff;
 							font-weight: bolder;
-							font-size: 2.25rem;
+							font-size: 2.05rem;
 						`}
 					>
 						{component[0].heading}

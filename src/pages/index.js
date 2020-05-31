@@ -5,6 +5,7 @@ import Component2 from '../components/Component2';
 import Component3 from '../components/Component3';
 import Component4 from '../components/Component4';
 import Component5 from '../components/Component5';
+import Component6 from '../components/Component6';
 import { css } from '@emotion/core';
 
 const RootIndex = () => {
@@ -46,10 +47,76 @@ const RootIndex = () => {
 			</div>
 			<div
 				css={css`
+					margin: 1rem 0;
 					display: grid;
+					grid-template-columns: 48.1875rem 23.25rem;
+					grid-template-rows: 1fr 0.32fr 0.32fr;
+					grid-gap: 2rem;
 				`}
 			>
-				<Component5 />
+				<Component5
+					css={css`
+						grid-column: 1 / 2;
+						grid-row: 1 / 3;
+					`}
+				/>
+				<div
+					css={css`
+						width: 25rem;
+						grid-column: 2 / 3;
+						grid-row: 1 / 4;
+						border-radius: 15px;
+						overflow: hidden;
+						background-color: #fff;
+					`}
+				>
+					<h3
+						css={css`
+							margin: 0;
+							padding: 0.875rem;
+							color: #fff;
+							background-color: #3f51b5;
+							text-align: center;
+							font-size: 1.125rem;
+							font-weight: bolder;
+							text-transform: uppercase;
+						`}
+					>
+						Latest News
+					</h3>
+					<Component6 number={'6'} />
+					<Component6 number={'5'} />
+					<Component6 number={'4'} />
+					<Component6 number={'3'} />
+					<Component6 number={'2'} />
+					<h4
+						css={css`
+							text-transform: uppercase;
+							color: #7b8591;
+							text-align: center;
+							margin-top: 2.125rem;
+							padding-top: 1.625rem;
+							border-top: 1px solid #95989a;
+						`}
+					>
+						More News
+					</h4>
+				</div>
+				<div
+					css={css`
+						grid-column: 1 / 3;
+						grid-row: 2 / 4;
+						width: 48.1875rem;
+						height: 10.9375rem;
+						background-color: #fff;
+						border-radius: 15px;
+						display: flex;
+						flex-direction: row;
+					`}
+				>
+					<Component6 number={'1'} />
+					<Component6 number={'0'} />
+				</div>
 			</div>
 		</Layout>
 	);
