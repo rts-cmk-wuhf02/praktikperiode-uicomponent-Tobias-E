@@ -23,7 +23,6 @@ const Component6 = ({ number }) => {
 		}
 	`);
 	const component = data.allContentfulComponent6.nodes;
-	console.log(component);
 	return (
 		<div
 			css={css`
