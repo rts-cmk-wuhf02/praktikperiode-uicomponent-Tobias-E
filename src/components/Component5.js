@@ -29,10 +29,10 @@ const Component5 = () => {
 		<BackgroundImage
 			fluid={component[0].images[1].fluid}
 			css={css`
-				width: 771px;
-				height: 475px;
-				padding: 35px;
-				margin: 15px;
+				width: 48.1875rem;
+				height: 29.6875rem;
+				padding: 2.1875rem;
+				margin: 0.9375rem;
 				border-radius: 15px;
 				position: relative;
 				overflow: hidden;
@@ -59,13 +59,13 @@ const Component5 = () => {
 					<Img
 						fluid={component[0].images[0].fluid}
 						css={css`
-							width: 23px;
-							height: 23px;
+							width: 1.4375rem;
+							height: 1.4375rem;
 						`}
 					/>
 					<h5
 						css={css`
-							margin-left: 11px;
+							margin-left: 0.6875rem;
 							color: #fff;
 							text-transform: uppercase;
 							letter-spacing: 0.2rem;
@@ -84,16 +84,16 @@ const Component5 = () => {
 				<article
 					css={css`
 						width: 50%;
-						margin-bottom: 50px;
+						margin-bottom: 3.125rem;
 					`}
 				>
 					<h1
 						css={css`
 							width: 70%;
-							margin-bottom: 18px;
+							margin-bottom: 1.125rem;
 							color: #fff;
 							font-weight: bolder;
-							font-size: 36px;
+							font-size: 2.25rem;
 						`}
 					>
 						{component[0].heading}
@@ -116,7 +116,7 @@ const Component5 = () => {
 						position: absolute;
 						bottom: 0;
 						left: 47%;
-						width: 53px;
+						width: 3.3125rem;
 						display: flex;
 						flex-direction: row;
 						justify-content: space-between;
@@ -124,16 +124,16 @@ const Component5 = () => {
 				>
 					<div
 						css={css`
-							width: 15px;
-							height: 2px;
+							width: 0.9375rem;
+							height: 0.125rem;
 							background-color: #fff;
 							border-radius: 25px;
 						`}
 					></div>
 					<div
 						css={css`
-							width: 15px;
-							height: 2px;
+							width: 0.9375rem;
+							height: 0.125rem;
 							background-color: #fff;
 							border-radius: 25px;
 							opacity: 0.3;
@@ -141,8 +141,8 @@ const Component5 = () => {
 					></div>
 					<div
 						css={css`
-							width: 15px;
-							height: 2px;
+							width: 0.9375rem;
+							height: 0.125rem;
 							background-color: #fff;
 							border-radius: 25px;
 							opacity: 0.3;
