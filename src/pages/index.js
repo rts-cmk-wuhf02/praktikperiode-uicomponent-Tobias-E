@@ -10,6 +10,7 @@ import Component7 from '../components/Component7';
 import Component8 from '../components/Component8';
 import Component9 from '../components/Component9';
 import Component10 from '../components/Component10';
+import Component11 from '../components/Component11';
 import { css } from '@emotion/core';
 
 const RootIndex = () => {
@@ -207,6 +208,18 @@ const RootIndex = () => {
 					<Component10 number={'2'} />
 					<Component10 number={'1'} />
 					<Component10 number={'0'} />
+				</div>
+				<div
+					css={css`
+						grid-column: 3 / 4;
+						grid-row: 1 / 5;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+					`}
+				>
+					<Component11 number={'1'} />
+					<Component11 number={'0'} />
 				</div>
 			</div>
 		</Layout>
