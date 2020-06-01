@@ -24,8 +24,8 @@ const Component9 = ({ number }) => {
 	return (
 		<div
 			css={css`
-				width: 169px;
-				height: 171px;
+				width: 10.5625rem;
+				height: 10.6875rem;
 				border-radius: 15px;
 				background-color: ${component[number].color};
 				display: flex;
@@ -44,7 +44,7 @@ const Component9 = ({ number }) => {
 			<h4
 				css={css`
 					color: #fff;
-					margin: 10px 0 0 0;
+					margin: 0.625rem 0 0 0;
 					text-transform: uppercase;
 					letter-spacing: 0.2rem;
 				`}

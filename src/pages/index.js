@@ -9,6 +9,7 @@ import Component6 from '../components/Component6';
 import Component7 from '../components/Component7';
 import Component8 from '../components/Component8';
 import Component9 from '../components/Component9';
+import Component10 from '../components/Component10';
 import { css } from '@emotion/core';
 
 const RootIndex = () => {
@@ -137,35 +138,75 @@ const RootIndex = () => {
 				css={css`
 					margin: 2rem 0;
 					display: grid;
-					grid-template-columns: 372px 372px 372px;
+					grid-template-columns: 23.25rem 23.25rem 23.25rem;
+					grid-template-rows: 10.9375rem 10.9375rem 23.25rem 10.9375rem;
 					grid-gap: 2rem;
 				`}
 			>
 				<div
 					css={css`
 						grid-column: 1 / 2;
+						grid-row: 1 / 2;
 					`}
 				>
-					<Component7
-						number={'1'}
-						css={css`
-							margin-bottom: 2rem;
-						`}
-					/>
+					<Component7 number={'1'} />
+				</div>
+				<div
+					css={css`
+						grid-column: 1 / 2;
+						grid-row: 2 / 3;
+					`}
+				>
 					<Component7 number={'0'} />
+				</div>
+				<div
+					css={css`
+						grid-column: 1 / 2;
+						grid-row: 3 / 4;
+					`}
+				>
 					<Component8 />
-					<div
+				</div>
+				<div
+					css={css`
+						grid-column: 1 / 2;
+						grid-row: 4 / 5;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+					`}
+				>
+					<Component9 number={'1'} />
+					<Component9 number={'0'} />
+				</div>
+				<div
+					css={css`
+						grid-column: 2 / 3;
+						grid-row: 1 / 5;
+						border-radius: 15px;
+						overflow: hidden;
+						background-color: #fff;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+					`}
+				>
+					<h4
 						css={css`
-							grid-column: 1 / 2;
-							grid-row: 4 / 5;
-							display: flex;
-							flex-direction: row;
-							justify-content: space-between;
+							width: 100%;
+							margin: 0 0 1.875rem 0;
+							padding: 0.9375rem 0;
+							text-align: center;
+							color: #fff;
+							background-color: #3ca773;
 						`}
 					>
-						<Component9 number={'1'} />
-						<Component9 number={'0'} />
-					</div>
+						NEWS DIGEST
+					</h4>
+					<Component10 number={'3'} />
+					<Component10 number={'2'} />
+					<Component10 number={'1'} />
+					<Component10 number={'0'} />
 				</div>
 			</div>
 		</Layout>
