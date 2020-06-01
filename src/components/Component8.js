@@ -22,7 +22,6 @@ const Component8 = () => {
 	`);
 
 	const component = data.allContentfulComponent8.nodes;
-	console.log(component);
 
 	return (
 		<BackgroundImage
